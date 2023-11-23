@@ -1,0 +1,6 @@
+RUN	performance.PerfTest	perftest	1697100234247	 	3.7.4
+USER	create and delete article	START	1697100234369
+REQUEST		POST /api/users/login	1697100236852	1697100237386	OK	 
+REQUEST		POST /api/articles	1697100237866	1697100238250	OK	 
+REQUEST		DELETE /api/articles/{articleId}	1697100243400	1697100243762	OK	 
+USER	create and delete article	END	1697100243782

@@ -1,0 +1,3054 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: conduitApp/feature/HomeWork.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>conduitApp</td>
+      <td>13 Oct 2023, 16:11</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">conduitApp/feature/HomeWork.feature</td>
+          <td      class="passed"    >78</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">78</td>
+
+          <td  class="passed"    >2</td>
+          <td >0</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="6148068584">6.148</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1442878476.html">@parallel=false</a>
+       <a href="report-tag_4075208210.html">@debug</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">conduitApp/feature/HomeWork.feature</span>
+
+
+</div>
+
+        <div class="description indention">Home Work</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.182</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:11:16.471 &lt;&lt; lock released, cached callSingle: classpath:helpers/CreateToken.feature
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">helpers/CreateToken.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>16:11:15.218 karate.env system property was: null 
+16:11:15.231 &gt;&gt; lock acquired, begin callSingle: classpath:helpers/CreateToken.feature
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path 'users/login'</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request {&quot;user&quot;: {&quot;email&quot;: &quot;#(userEmail)&quot;,&quot;password&quot;: &quot;#(userPwd)&quot;}}</span>
+
+  <span class="lead-duration duration">0.032</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">1.051</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>16:11:15.736 request:
+1 &gt; POST https://api.realworld.io/api/users/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 63
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:{&quot;email&quot;:&quot;test_ale_du@mail.com&quot;,&quot;password&quot;:&quot;Pass1234&quot;}}
+
+16:11:16.401 response time in milliseconds: 655
+1 &lt; 200
+1 &lt; Date: Fri, 13 Oct 2023 13:11:16 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1697202676&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=qjp35R34u4FYa2%2B2DzyQS80LUP5aVN0uLBizbswUFbU%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697202676&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=qjp35R34u4FYa2%2B2DzyQS80LUP5aVN0uLBizbswUFbU%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;16d-l8rJfij8iEcw/9/Q+RIrC4Wp8jo&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 8157d3d57f000540-OTP
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;user&quot;:{&quot;email&quot;:&quot;test_ale_du@mail.com&quot;,&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M&quot;}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def authToken = response.user.token</span>
+
+  <span class="lead-duration duration">0.020</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print authToken</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>16:11:16.462 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userName = response.user.username</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print userName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>16:11:16.466 [print] KarateAle123 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.017</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def commentRequestBody = read('classpath:conduitApp/json/newCommentRequest.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def commentText = commentRequestBody.comment.body</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def favoriteArticleResponseBody = read('classpath:conduitApp/json/favoriteArticleResponse.json')</span>
+
+  <span class="lead-duration duration">0.021</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def ArticleResponseBody = read('classpath:conduitApp/json/articleResponse.json')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def CommentResponseBody = read('classpath:conduitApp/json/commentResponse.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4075208210.html">@debug</a>
+       <a href="report-tag_1442878476.html">@parallel=false</a>
+</div>
+
+
+  <span class="lead-duration duration">2.291</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Favorite articles</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-8" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># Step 1: Get atricles of the global feed</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params {limit: 10, offset: 0}</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.804</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>16:11:16.550 request:
+1 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:11:17.345 response time in milliseconds: 793
+1 &lt; 200
+1 &lt; Date: Fri, 13 Oct 2023 13:11:17 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;ebf-yDkt/m1648VsIWJROd8d43lyH8Y&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Wij3KvSHvZEhVGRiUI5qeC9GyEV%2BpibRkrTYKLUI3le4axW2Y42ITfXR%2FV9HJDi2Zh%2FisRhA%2BetNJuu5%2BRaTLcCrWM7AkvzAzoozHmH3REgA3c5vUGpQd8idhhCFEWpxfApC&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 8157d3d90ddab9dd-OTP
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;iedkenkvqt-237462&quot;,&quot;title&quot;:&quot;iedkenkvqt&quot;,&quot;description&quot;:&quot;ohnxatnzpq descr&quot;,&quot;body&quot;:&quot;ifacfwkasl body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-12T12:24:38.847Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-12T12:24:38.847Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Lythene-Frey-237462&quot;,&quot;title&quot;:&quot;Lythene Frey&quot;,&quot;description&quot;:&quot;Tyrosh&quot;,&quot;body&quot;:&quot;And I have a tender spot in my heart for cripples and bastards and broken things.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-10-12T08:38:36.896Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-12T08:38:36.896Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Valaena-Velaryon-237462&quot;,&quot;title&quot;:&quot;Valaena Velaryon&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;When you play a game of thrones you win or you die.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-10-11T12:46:12.025Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-11T12:46:12.025Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;iyepirfscj-237462&quot;,&quot;title&quot;:&quot;iyepirfscj&quot;,&quot;description&quot;:&quot;khrrpnvmgt descr&quot;,&quot;body&quot;:&quot;jmrdrgqqxa body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-11T07:58:25.316Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-11T07:58:25.316Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;niajyxlemi-237462&quot;,&quot;title&quot;:&quot;niajyxlemi&quot;,&quot;description&quot;:&quot;pqkdlnslqy descr&quot;,&quot;body&quot;:&quot;fnflhkogkh body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-11T07:15:15.997Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-11T07:15:15.997Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;wkmognxgbi-237462&quot;,&quot;title&quot;:&quot;wkmognxgbi&quot;,&quot;description&quot;:&quot;vjremmevhr descr&quot;,&quot;body&quot;:&quot;mushcktycq body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-10T14:16:07.079Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T14:16:07.079Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;ikusnnyijb-237462&quot;,&quot;title&quot;:&quot;ikusnnyijb&quot;,&quot;description&quot;:&quot;new article test&quot;,&quot;body&quot;:&quot;test body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-10T13:12:46.661Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T13:12:46.661Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;wjamlgbhck-237462&quot;,&quot;title&quot;:&quot;wjamlgbhck&quot;,&quot;description&quot;:&quot;new article test&quot;,&quot;body&quot;:&quot;test body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-10T12:44:56.810Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T12:44:56.810Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;rmvbsbdnxh-237462&quot;,&quot;title&quot;:&quot;rmvbsbdnxh&quot;,&quot;description&quot;:&quot;new article test&quot;,&quot;body&quot;:&quot;test body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-10T12:21:19.586Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T12:21:19.586Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;nqfesqpibn-237462&quot;,&quot;title&quot;:&quot;nqfesqpibn&quot;,&quot;description&quot;:&quot;new article test&quot;,&quot;body&quot;:&quot;test body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-10T11:48:01.306Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T11:48:01.306Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:253}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 2: Get the favorites count and slug ID for the first arice, save it to variables</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def favCount = response.articles[0].favoritesCount</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def slugId = response.articles[0].slug</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 3: Make POST request to increse favorites count for the first article</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles/' + slugId + '/favorite'</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.327</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>16:11:17.373 request:
+2 &gt; POST https://api.realworld.io/api/articles/iedkenkvqt-237462/favorite
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+16:11:17.694 response time in milliseconds: 320
+2 &lt; 200
+2 &lt; Date: Fri, 13 Oct 2023 13:11:17 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;28d-vZb+Zz5+s2MjsSBhb6QrZObKhkE&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=62hTR9ytCDDVFBvAOnCuk5SeUqnpV3DXoxspBhzVEcbKK9Wby3d7xJmcVe6PtPJshwtZYhQIAoCZ2Di7fYjlRrRGIXHGhd7UKKyVuuQ8f%2Bd9ZAj8myKS%2Fe730dcHCcBrADrn&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 8157d3de1d83055b-OTP
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;article&quot;:{&quot;id&quot;:373230,&quot;slug&quot;:&quot;iedkenkvqt-237462&quot;,&quot;title&quot;:&quot;iedkenkvqt&quot;,&quot;description&quot;:&quot;ohnxatnzpq descr&quot;,&quot;body&quot;:&quot;ifacfwkasl body&quot;,&quot;createdAt&quot;:&quot;2023-10-12T12:24:38.847Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-12T12:24:38.847Z&quot;,&quot;authorId&quot;:237462,&quot;tagList&quot;:[&quot;test&quot;],&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritedBy&quot;:[{&quot;id&quot;:237462,&quot;email&quot;:&quot;test_ale_du@mail.com&quot;,&quot;username&quot;:&quot;KarateAle123&quot;,&quot;password&quot;:&quot;$2a$10$NFqc57aDc3T0QqfeEEoOXuiUXrt7ImecD3XlV61otb7yhKeFjf3a6&quot;,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;bio&quot;:null,&quot;demo&quot;:false}],&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 4: Verify response schema</div>
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == favoriteArticleResponseBody</span>
+
+  <span class="lead-duration duration">0.066</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 5: Verify that favorites article incremented by 1</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.article.favoritesCount == favCount + 1</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 6: Get all favorite articles</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params {favorited: #(userName),limit: 10, offset: 0}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.606</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>16:11:17.776 request:
+3 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10&amp;favorited=KarateAle123
+3 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M
+3 &gt; Host: api.realworld.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.1)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+16:11:18.372 response time in milliseconds: 592
+3 &lt; 200
+3 &lt; Date: Fri, 13 Oct 2023 13:11:18 GMT
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; X-Powered-By: Express
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Etag: W/&quot;f27-FHGcNxEQ8fDxYpcQaDROYwSEiJc&quot;
+3 &lt; Via: 1.1 vegur
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=VTnEyH4tpmTBW3ZgJGNHJWFCEShDwMeYoa1miBIZ46Oz%2BF8Z4%2FnQUxkdu4zBLajFGszkH9TCK%2B7aF4cCUcZp5rMaY9hrjky3eG84RPeCW8pI4J%2BINBu4RZPNFkvQfAoR%2BpSj&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+3 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+3 &lt; Server: cloudflare
+3 &lt; CF-RAY: 8157d3e0aab70529-OTP
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;iedkenkvqt-237462&quot;,&quot;title&quot;:&quot;iedkenkvqt&quot;,&quot;description&quot;:&quot;ohnxatnzpq descr&quot;,&quot;body&quot;:&quot;ifacfwkasl body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-12T12:24:38.847Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-12T12:24:38.847Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Valaena-Velaryon-237462&quot;,&quot;title&quot;:&quot;Valaena Velaryon&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;When you play a game of thrones you win or you die.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-10-11T12:46:12.025Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-11T12:46:12.025Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;iyepirfscj-237462&quot;,&quot;title&quot;:&quot;iyepirfscj&quot;,&quot;description&quot;:&quot;khrrpnvmgt descr&quot;,&quot;body&quot;:&quot;jmrdrgqqxa body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-11T07:58:25.316Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-11T07:58:25.316Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;wkmognxgbi-237462&quot;,&quot;title&quot;:&quot;wkmognxgbi&quot;,&quot;description&quot;:&quot;vjremmevhr descr&quot;,&quot;body&quot;:&quot;mushcktycq body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-10T14:16:07.079Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T14:16:07.079Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Masha-Heddle-237462&quot;,&quot;title&quot;:&quot;Masha Heddle&quot;,&quot;description&quot;:&quot;Lannisport&quot;,&quot;body&quot;:&quot;A lion doesn't concern itself with the opinion of sheep.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-10-10T08:52:21.134Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T08:52:21.134Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Duram-Bar-Emmon-237462&quot;,&quot;title&quot;:&quot;Duram Bar Emmon&quot;,&quot;description&quot;:&quot;Mantarys&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-10-10T08:51:17.699Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T08:51:17.699Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Lucas-Corbray-237462&quot;,&quot;title&quot;:&quot;Lucas Corbray&quot;,&quot;description&quot;:&quot;Bayasabhad&quot;,&quot;body&quot;:&quot;Things are not always as they seemed, much that may seem evil can be good.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-10-10T08:50:19.545Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T08:50:19.545Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Joanna-Swyft-237462&quot;,&quot;title&quot;:&quot;Joanna Swyft&quot;,&quot;description&quot;:&quot;Elyria&quot;,&quot;body&quot;:&quot;Give me honorable enemies rather than ambitious ones, and I'll sleep more easily by night.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-10-10T08:49:22.257Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T08:49:22.257Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Ormond-Yronwood-237462&quot;,&quot;title&quot;:&quot;Ormond Yronwood&quot;,&quot;description&quot;:&quot;Tolos&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-10-10T08:34:51.438Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T08:34:51.438Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Tysha-237462&quot;,&quot;title&quot;:&quot;Tysha&quot;,&quot;description&quot;:&quot;Yunkai&quot;,&quot;body&quot;:&quot;Do the dead frighten you?&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-10-06T07:32:40.064Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-06T07:32:40.064Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:11}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 7: Verify response schema</div>
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each response.articles == ArticleResponseBody</span>
+
+  <span class="lead-duration duration">0.098</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 8: Verify that slug ID from Step 2 exist in one of the favorite articles</div>
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.articles[0].slug contains '#(slugId)'</span>
+
+  <span class="lead-duration duration">0.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention">#Delete favorite</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles/' + slugId + '/favorite'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Delete</span>
+
+  <span class="lead-duration duration">0.352</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>16:11:18.493 request:
+4 &gt; DELETE https://api.realworld.io/api/articles/iedkenkvqt-237462/favorite
+4 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M
+4 &gt; Host: api.realworld.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.1)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+16:11:18.834 response time in milliseconds: 338
+4 &lt; 200
+4 &lt; Date: Fri, 13 Oct 2023 13:11:18 GMT
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; X-Powered-By: Express
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Etag: W/&quot;1aa-FeWPaf73WIjec9lAA6ibHc19D5A&quot;
+4 &lt; Via: 1.1 vegur
+4 &lt; CF-Cache-Status: DYNAMIC
+4 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=wLa5eedLgjqwKtTzjndRX8Wirqb0%2FfI2q8r3xw1de0Oy58uH0Yajicf0TzfSXboa2DPOTiFLYr5gECaHdmJCXLJ1%2FcJV4dcO8LsFSikxkzsZQlAmSefqbBO6NVnP97cUf1CG&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+4 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+4 &lt; Server: cloudflare
+4 &lt; CF-RAY: 8157d3e5298629c7-OTP
+4 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;article&quot;:{&quot;id&quot;:373230,&quot;slug&quot;:&quot;iedkenkvqt-237462&quot;,&quot;title&quot;:&quot;iedkenkvqt&quot;,&quot;description&quot;:&quot;ohnxatnzpq descr&quot;,&quot;body&quot;:&quot;ifacfwkasl body&quot;,&quot;createdAt&quot;:&quot;2023-10-12T12:24:38.847Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-12T12:24:38.847Z&quot;,&quot;authorId&quot;:237462,&quot;tagList&quot;:[&quot;test&quot;],&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false},&quot;favoritedBy&quot;:[],&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">0.023</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-14">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-14" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-15" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url apiUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>16:11:18.893 karate.env system property was: null 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def timeValidator = read('classpath:helpers/timeValidator.js')</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def commentRequestBody = read('classpath:conduitApp/json/newCommentRequest.json')</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def commentText = commentRequestBody.comment.body</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def favoriteArticleResponseBody = read('classpath:conduitApp/json/favoriteArticleResponse.json')</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def ArticleResponseBody = read('classpath:conduitApp/json/articleResponse.json')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def CommentResponseBody = read('classpath:conduitApp/json/commentResponse.json')</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_4075208210.html">@debug</a>
+       <a href="report-tag_1442878476.html">@parallel=false</a>
+</div>
+
+
+  <span class="lead-duration duration">2.651</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Comment articles</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># Step 1: Get articles of the global feed</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">params {limit: 10, offset: 0}</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.780</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>16:11:18.928 request:
+1 &gt; GET https://api.realworld.io/api/articles?offset=0&amp;limit=10
+1 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M
+1 &gt; Host: api.realworld.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:11:19.692 response time in milliseconds: 760
+1 &lt; 200
+1 &lt; Date: Fri, 13 Oct 2023 13:11:19 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1697202679&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=DE5m8ckv4UwBuuzAG00qWFrwYMtuD8o%2BjAb%2BgmCWlMw%3D&quot;}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697202679&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=DE5m8ckv4UwBuuzAG00qWFrwYMtuD8o%2BjAb%2BgmCWlMw%3D
+1 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;ebf-yDkt/m1648VsIWJROd8d43lyH8Y&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 8157d3e7cb52055f-OTP
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;articles&quot;:[{&quot;slug&quot;:&quot;iedkenkvqt-237462&quot;,&quot;title&quot;:&quot;iedkenkvqt&quot;,&quot;description&quot;:&quot;ohnxatnzpq descr&quot;,&quot;body&quot;:&quot;ifacfwkasl body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-12T12:24:38.847Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-12T12:24:38.847Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Lythene-Frey-237462&quot;,&quot;title&quot;:&quot;Lythene Frey&quot;,&quot;description&quot;:&quot;Tyrosh&quot;,&quot;body&quot;:&quot;And I have a tender spot in my heart for cripples and bastards and broken things.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-10-12T08:38:36.896Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-12T08:38:36.896Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;Valaena-Velaryon-237462&quot;,&quot;title&quot;:&quot;Valaena Velaryon&quot;,&quot;description&quot;:&quot;Volantis&quot;,&quot;body&quot;:&quot;When you play a game of thrones you win or you die.&quot;,&quot;tagList&quot;:[],&quot;createdAt&quot;:&quot;2023-10-11T12:46:12.025Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-11T12:46:12.025Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;iyepirfscj-237462&quot;,&quot;title&quot;:&quot;iyepirfscj&quot;,&quot;description&quot;:&quot;khrrpnvmgt descr&quot;,&quot;body&quot;:&quot;jmrdrgqqxa body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-11T07:58:25.316Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-11T07:58:25.316Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;niajyxlemi-237462&quot;,&quot;title&quot;:&quot;niajyxlemi&quot;,&quot;description&quot;:&quot;pqkdlnslqy descr&quot;,&quot;body&quot;:&quot;fnflhkogkh body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-11T07:15:15.997Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-11T07:15:15.997Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;wkmognxgbi-237462&quot;,&quot;title&quot;:&quot;wkmognxgbi&quot;,&quot;description&quot;:&quot;vjremmevhr descr&quot;,&quot;body&quot;:&quot;mushcktycq body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-10T14:16:07.079Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T14:16:07.079Z&quot;,&quot;favorited&quot;:true,&quot;favoritesCount&quot;:1,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;ikusnnyijb-237462&quot;,&quot;title&quot;:&quot;ikusnnyijb&quot;,&quot;description&quot;:&quot;new article test&quot;,&quot;body&quot;:&quot;test body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-10T13:12:46.661Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T13:12:46.661Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;wjamlgbhck-237462&quot;,&quot;title&quot;:&quot;wjamlgbhck&quot;,&quot;description&quot;:&quot;new article test&quot;,&quot;body&quot;:&quot;test body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-10T12:44:56.810Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T12:44:56.810Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;rmvbsbdnxh-237462&quot;,&quot;title&quot;:&quot;rmvbsbdnxh&quot;,&quot;description&quot;:&quot;new article test&quot;,&quot;body&quot;:&quot;test body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-10T12:21:19.586Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T12:21:19.586Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}},{&quot;slug&quot;:&quot;nqfesqpibn-237462&quot;,&quot;title&quot;:&quot;nqfesqpibn&quot;,&quot;description&quot;:&quot;new article test&quot;,&quot;body&quot;:&quot;test body&quot;,&quot;tagList&quot;:[&quot;test&quot;],&quot;createdAt&quot;:&quot;2023-10-10T11:48:01.306Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-10T11:48:01.306Z&quot;,&quot;favorited&quot;:false,&quot;favoritesCount&quot;:0,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}],&quot;articlesCount&quot;:253}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 2: Get the slug ID for the first article, save it to variable</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def slugId = response.articles[0].slug</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 3: Make a GET call to 'comments' end-point to get all comments</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles/' + slugId + '/comments'</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.330</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>16:11:19.715 request:
+2 &gt; GET https://api.realworld.io/api/articles/iedkenkvqt-237462/comments
+2 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M
+2 &gt; Host: api.realworld.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+16:11:20.040 response time in milliseconds: 323
+2 &lt; 200
+2 &lt; Date: Fri, 13 Oct 2023 13:11:20 GMT
+2 &lt; Content-Type: application/json; charset=utf-8
+2 &lt; Content-Length: 15
+2 &lt; Connection: keep-alive
+2 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1697202679&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=DE5m8ckv4UwBuuzAG00qWFrwYMtuD8o%2BjAb%2BgmCWlMw%3D&quot;}]}
+2 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697202679&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=DE5m8ckv4UwBuuzAG00qWFrwYMtuD8o%2BjAb%2BgmCWlMw%3D
+2 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+2 &lt; X-Powered-By: Express
+2 &lt; Access-Control-Allow-Origin: *
+2 &lt; Etag: W/&quot;f-DSK3s7cPAqrq+537gdA1gy8XGx8&quot;
+2 &lt; Via: 1.1 vegur
+2 &lt; CF-Cache-Status: DYNAMIC
+2 &lt; Server: cloudflare
+2 &lt; CF-RAY: 8157d3eccb9d0557-OTP
+2 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;comments&quot;:[]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 4: Verify response schema</div>
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response ==</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>{
+    &quot;comments&quot;:'#array'
+ }</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 5: Get the count of the comments array lentgh and save to variable</div>
+          <div class="comment indention">#Example</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def responseWithComments = response.comments</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def commentsCount = responseWithComments.length</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 6: Make a POST request to publish a new comment</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles/' + slugId + '/comments'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request commentRequestBody</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Post</span>
+
+  <span class="lead-duration duration">0.343</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>16:11:20.060 request:
+3 &gt; POST https://api.realworld.io/api/articles/iedkenkvqt-237462/comments
+3 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 34
+3 &gt; Host: api.realworld.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.1)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;comment&quot;:{&quot;body&quot;:&quot;comment 123&quot;}}
+
+16:11:20.400 response time in milliseconds: 336
+3 &lt; 200
+3 &lt; Date: Fri, 13 Oct 2023 13:11:20 GMT
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1697202680&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=JUp3C6Ql9r4r8mxR39nOLRDJRNqBLJWuxF94X8jLTYQ%3D&quot;}]}
+3 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697202680&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=JUp3C6Ql9r4r8mxR39nOLRDJRNqBLJWuxF94X8jLTYQ%3D
+3 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+3 &lt; X-Powered-By: Express
+3 &lt; Access-Control-Allow-Origin: *
+3 &lt; Etag: W/&quot;f9-Qy3y6/jRi5LIQrzu/vacctJ4/Hw&quot;
+3 &lt; Via: 1.1 vegur
+3 &lt; CF-Cache-Status: DYNAMIC
+3 &lt; Server: cloudflare
+3 &lt; CF-RAY: 8157d3eef8226277-OTP
+3 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;comment&quot;:{&quot;id&quot;:97827,&quot;createdAt&quot;:&quot;2023-10-13T13:11:20.345Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-13T13:11:20.345Z&quot;,&quot;body&quot;:&quot;comment 123&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 7: Verify response schema that should contain posted comment text</div>
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == CommentResponseBody</span>
+
+  <span class="lead-duration duration">0.016</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 8: Get the list of all comments for this article one more time</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles/' + slugId + '/comments'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.454</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>16:11:20.425 request:
+4 &gt; GET https://api.realworld.io/api/articles/iedkenkvqt-237462/comments
+4 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M
+4 &gt; Host: api.realworld.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.1)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+16:11:20.866 response time in milliseconds: 436
+4 &lt; 200
+4 &lt; Date: Fri, 13 Oct 2023 13:11:20 GMT
+4 &lt; Content-Type: application/json; charset=utf-8
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1697202680&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=JUp3C6Ql9r4r8mxR39nOLRDJRNqBLJWuxF94X8jLTYQ%3D&quot;}]}
+4 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1697202680&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=JUp3C6Ql9r4r8mxR39nOLRDJRNqBLJWuxF94X8jLTYQ%3D
+4 &lt; Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
+4 &lt; X-Powered-By: Express
+4 &lt; Access-Control-Allow-Origin: *
+4 &lt; Etag: W/&quot;fc-BbPweBK8ROwtD/AnDMeD35WR3Tw&quot;
+4 &lt; Via: 1.1 vegur
+4 &lt; CF-Cache-Status: DYNAMIC
+4 &lt; Server: cloudflare
+4 &lt; CF-RAY: 8157d3f12e38b9c9-OTP
+4 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;comments&quot;:[{&quot;id&quot;:97827,&quot;createdAt&quot;:&quot;2023-10-13T13:11:20.345Z&quot;,&quot;updatedAt&quot;:&quot;2023-10-13T13:11:20.345Z&quot;,&quot;body&quot;:&quot;comment 123&quot;,&quot;author&quot;:{&quot;username&quot;:&quot;KarateAle123&quot;,&quot;bio&quot;:null,&quot;image&quot;:&quot;https://api.realworld.io/images/smiley-cyrus.jpeg&quot;,&quot;following&quot;:false}}]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 9: Verify number of comments increased by 1 (similar like we did with favorite counts)</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def initialCount = commentsCount</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def commentsArray = response.comments</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def finalCount = commentsArray.length</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match finalCount == initialCount + 1</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 10: Make a DELETE request to delete comment</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def commentId = response.comments[0].id</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles/' + slugId + '/comments/' + commentId</span>
+
+  <span class="lead-duration duration">0.007</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Delete</span>
+
+  <span class="lead-duration duration">0.331</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>16:11:20.896 request:
+5 &gt; DELETE https://api.realworld.io/api/articles/iedkenkvqt-237462/comments/97827
+5 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M
+5 &gt; Host: api.realworld.io
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.1)
+5 &gt; Accept-Encoding: gzip,deflate
+
+
+16:11:21.225 response time in milliseconds: 327
+5 &lt; 200
+5 &lt; Date: Fri, 13 Oct 2023 13:11:21 GMT
+5 &lt; Content-Type: application/json; charset=utf-8
+5 &lt; Content-Length: 2
+5 &lt; Connection: keep-alive
+5 &lt; X-Powered-By: Express
+5 &lt; Access-Control-Allow-Origin: *
+5 &lt; Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+5 &lt; Via: 1.1 vegur
+5 &lt; CF-Cache-Status: DYNAMIC
+5 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=ho1uuBdMYXC95jTXc6MOQmQE2Xr%2B7neIpR4h0552nYqj4KSKkM0714dfZIr4s6h%2BGmHC9iL0cZfev8PzXyRsoF2nfNMhSUYOaIZ2rZc96k9iaCaefo79SjZxq0WW5p7%2FY%2BnJ&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+5 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+5 &lt; Server: cloudflare
+5 &lt; CF-RAY: 8157d3f42bc80548-OTP
+5 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Step 11: Get all comments again and verify number of comments decreased by 1</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'articles/' + slugId + '/comments'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+
+  <span class="lead-duration duration">0.333</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>16:11:21.231 request:
+6 &gt; GET https://api.realworld.io/api/articles/iedkenkvqt-237462/comments
+6 &gt; Authorization: Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdF9hbGVfZHVAbWFpbC5jb20iLCJ1c2VybmFtZSI6IkthcmF0ZUFsZTEyMyJ9LCJpYXQiOjE2OTcyMDI2NzYsImV4cCI6MTcwMjM4NjY3Nn0.0Tu-0_vmgzi5JED3UUkNsUvchGfK1pIS1_s4WYBwg0M
+6 &gt; Host: api.realworld.io
+6 &gt; Connection: Keep-Alive
+6 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/19.0.1)
+6 &gt; Accept-Encoding: gzip,deflate
+
+
+16:11:21.561 response time in milliseconds: 327
+6 &lt; 200
+6 &lt; Date: Fri, 13 Oct 2023 13:11:21 GMT
+6 &lt; Content-Type: application/json; charset=utf-8
+6 &lt; Content-Length: 15
+6 &lt; Connection: keep-alive
+6 &lt; X-Powered-By: Express
+6 &lt; Access-Control-Allow-Origin: *
+6 &lt; Etag: W/&quot;f-DSK3s7cPAqrq+537gdA1gy8XGx8&quot;
+6 &lt; Via: 1.1 vegur
+6 &lt; CF-Cache-Status: DYNAMIC
+6 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=B9VwQP9KN1wkXzEkRnDIaqVSa7jUY77%2BxHwzA%2BJBPq9NCAmn0ltclPR6m%2F6BgH7bOWyj5yX%2FFw0vjaBciiVhJpcjY2IPUjUGBx%2Ffdtk423cFqBu4otpP0ODIsi9W88W1%2Fdus&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+6 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+6 &lt; Server: cloudflare
+6 &lt; CF-RAY: 8157d3f64fec6255-OTP
+6 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;comments&quot;:[]}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def initialCount = finalCount</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def commentsArray = response.comments</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def finalCountAfterDelete = commentsArray.length</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match finalCountAfterDelete == initialCount - 1</span>
+
+  <span class="lead-duration duration">0.006</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
